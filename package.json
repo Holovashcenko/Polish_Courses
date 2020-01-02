@@ -1,0 +1,19 @@
+{
+  "name": "polish_courses",
+  "version": "1.0.0",
+  "description": "learning_polish_online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holovashcenko/Polish_Courses.git"
+  },
+  "author": "holovashchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holovashcenko/Polish_Courses/issues"
+  },
+  "homepage": "https://github.com/Holovashcenko/Polish_Courses#readme"
+}
