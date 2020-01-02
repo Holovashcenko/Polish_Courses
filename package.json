@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Holovashcenko/Polish_Courses/issues"
   },
-  "homepage": "https://github.com/Holovashcenko/Polish_Courses#readme"
+  "homepage": "https://github.com/Holovashcenko/Polish_Courses#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
