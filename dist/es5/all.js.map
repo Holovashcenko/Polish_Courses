@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["greeting","console","log"],"mappings":"AAAA;;AACA,IAAIA,QAAQ,GAAG,cAAf;AACAC,OAAO,CAACC,GAAR,CAAYF,QAAZ","file":"all.js","sourcesContent":["\"use strict\";\r\nlet greeting = \"Hello, World\";\r\nconsole.log(greeting);"]}

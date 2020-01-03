@@ -1,0 +1,11 @@
+@import "normalize";
+
+$color: rgba(103, 103, 202, 0.562);
+
+body {
+    background-color: red;
+    h1 {
+        text-align: center;
+        color: $color;
+    }
+}
