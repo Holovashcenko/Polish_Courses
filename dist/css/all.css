@@ -280,17 +280,25 @@ template, [hidden] {
  */
 body {
   height: 100vh;
+  background-image: url("/../images/dose-media-bU6JyhSI6zo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: grid;
   grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
   grid-template-rows: 60px 50px 1fr 40px;
   grid-template-columns: 1fr 1fr 25%; }
-  body header,
-  body nav,
-  body main,
-  body section,
-  body aside,
-  body footer {
-    border: 1px solid black; }
+  body header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto; }
+    body header #logo {
+      margin: 0;
+      padding: 0; }
+      body header #logo img {
+        width: 100px; }
+  body h1 {
+    text-align: center; }
   body main {
     display: grid;
     grid-template-columns: 1fr 1fr; }
