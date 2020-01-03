@@ -1,11 +1,49 @@
 @import "normalize";
 
-$color: rgba(103, 103, 202, 0.562);
-
 body {
-    background-color: red;
-    h1 {
-        text-align: center;
-        color: $color;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer";
+    grid-template-rows: 60px 50px 1fr 40px;
+    grid-template-columns: 1fr 1fr 25%;
+
+    header,
+    nav,
+    main,
+    section,
+    aside,
+    footer {
+        border: 1px solid black;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
 }

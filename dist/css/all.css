@@ -279,9 +279,30 @@ template, [hidden] {
  * Add the correct display in IE 10.
  */
 body {
-  background-color: red; }
-  body h1 {
-    text-align: center;
-    color: rgba(103, 103, 202, 0.562); }
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+  grid-template-rows: 60px 50px 1fr 40px;
+  grid-template-columns: 1fr 1fr 25%; }
+  body header,
+  body nav,
+  body main,
+  body section,
+  body aside,
+  body footer {
+    border: 1px solid black; }
+  body main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  body header {
+    grid-area: header; }
+  body nav {
+    grid-area: nav; }
+  body main {
+    grid-area: main; }
+  body aside {
+    grid-area: aside; }
+  body footer {
+    grid-area: footer; }
 
 /*# sourceMappingURL=all.css.map */
