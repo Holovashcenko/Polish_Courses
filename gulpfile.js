@@ -39,4 +39,4 @@ function watch() {
 exports.script = script;
 exports.style = style;
 exports.watch = watch;
-exports.default = gulp.parallel(style, script, watch);
+exports.default = gulp.series(style, script, watch);
