@@ -334,6 +334,16 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-area: main; }
+      body #wrapper main section {
+        margin: 5px; }
+        body #wrapper main section article {
+          display: flex;
+          flex-direction: column; }
+          body #wrapper main section article #article_image img {
+            border-radius: 10px;
+            width: 350px; }
+          body #wrapper main section article h2 {
+            text-align: center; }
     body #wrapper aside {
       grid-area: aside; }
     body #wrapper footer {

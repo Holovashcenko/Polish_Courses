@@ -50,7 +50,7 @@ body {
 
         nav {
             grid-area: nav;
-            
+
 
             #menu {
                 display: flex;
@@ -83,6 +83,28 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-area: main;
+
+            section {
+                margin: 5px;
+
+                article {
+                    display: flex;
+                    flex-direction: column;
+
+                    #article_image {
+                       
+
+                        img {
+                            border-radius: 10px;
+                            width: 350px;
+                        }
+                    }
+
+                    h2 {
+                        text-align: center;
+                    }
+                }
+            }
         }
 
         aside {
@@ -91,9 +113,10 @@ body {
 
         footer {
             grid-area: footer;
-            background:  rgba(139, 0, 0, 0.308);
+            background: rgba(139, 0, 0, 0.308);
             border-radius: 15px;
             margin-bottom: 10px;
+
             p {
                 margin: 0;
                 padding: 10px;
