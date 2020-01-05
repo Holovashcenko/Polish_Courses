@@ -290,7 +290,7 @@ body {
     margin: auto 10%;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
-    grid-template-rows: 60px 50px 1fr 40px;
+    grid-template-rows: 60px 50px 1fr auto;
     grid-template-columns: 1fr 1fr 25%;
     gap: 10px; }
     body #wrapper header {
@@ -304,15 +304,32 @@ body {
         body #wrapper header #logo img {
           width: 100px; }
       body #wrapper header h1 {
+        font-size: 40px;
         text-align: center;
         font-family: 'Ma Shan Zheng', cursive, sans-serif;
-        color: #bd1616; }
-      body #wrapper header h1:hover {
-        color: white; }
+        background: -webkit-linear-gradient(white, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
     body #wrapper nav {
       grid-area: nav; }
-      body #wrapper nav #menu li {
-        display: inline-block; }
+      body #wrapper nav #menu {
+        display: flex;
+        justify-content: space-evenly;
+        background: rgba(139, 0, 0, 0.308);
+        border-radius: 15px;
+        padding-inline-start: 0; }
+        body #wrapper nav #menu li {
+          list-style-type: none;
+          margin: 5px;
+          padding: 5px; }
+          body #wrapper nav #menu li a {
+            color: #bd0303;
+            text-decoration: none;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px white; }
+          body #wrapper nav #menu li a:hover {
+            color: red;
+            text-shadow: 2px 2px 1px white; }
     body #wrapper main {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -320,6 +337,13 @@ body {
     body #wrapper aside {
       grid-area: aside; }
     body #wrapper footer {
-      grid-area: footer; }
+      grid-area: footer;
+      background: rgba(139, 0, 0, 0.308);
+      border-radius: 15px;
+      margin-bottom: 10px; }
+      body #wrapper footer p {
+        margin: 0;
+        padding: 10px;
+        color: #bd0303; }
 
 /*# sourceMappingURL=all.css.map */

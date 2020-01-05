@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
 
 $logo_URL: url('/../images/dose-media-bU6JyhSI6zo-unsplash.jpg');
-$color: #bd1616;
 
 body {
     height: 100%;
@@ -20,7 +19,7 @@ body {
             "nav nav nav"
             "main main aside"
             "footer footer footer";
-        grid-template-rows: 60px 50px 1fr 40px;
+        grid-template-rows: 60px 50px 1fr auto;
         grid-template-columns: 1fr 1fr 25%;
         gap: 10px;
 
@@ -40,23 +39,42 @@ body {
             }
 
             h1 {
+                font-size: 40px;
                 text-align: center;
                 font-family: 'Ma Shan Zheng', cursive, sans-serif;
-                color: $color;
-            }
-
-            h1:hover {
-                color: white;
+                background: -webkit-linear-gradient(white, red);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
 
         nav {
             grid-area: nav;
+            
 
             #menu {
+                display: flex;
+                justify-content: space-evenly;
+                background: rgba(139, 0, 0, 0.308);
+                border-radius: 15px;
+                padding-inline-start: 0;
 
                 li {
-                    display: inline-block;
+                    list-style-type: none;
+                    margin: 5px;
+                    padding: 5px;
+
+                    a {
+                        color: rgb(189, 3, 3);
+                        text-decoration: none;
+                        font-size: 20px;
+                        text-shadow: 1px 1px 1px white;
+                    }
+
+                    a:hover {
+                        color: red;
+                        text-shadow: 2px 2px 1px white;
+                    }
                 }
             }
         }
@@ -73,6 +91,14 @@ body {
 
         footer {
             grid-area: footer;
+            background:  rgba(139, 0, 0, 0.308);
+            border-radius: 15px;
+            margin-bottom: 10px;
+            p {
+                margin: 0;
+                padding: 10px;
+                color: rgb(189, 3, 3);
+            }
         }
     }
 }
