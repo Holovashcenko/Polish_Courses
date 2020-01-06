@@ -281,7 +281,7 @@ template, [hidden] {
  */
 body {
   height: 100%;
-  background-image: url("/../images/dose-media-bU6JyhSI6zo-unsplash.jpg");
+  background-image: url("/images/dose-media-bU6JyhSI6zo-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -327,9 +327,15 @@ body {
             text-decoration: none;
             font-size: 20px;
             text-shadow: 1px 1px 1px white; }
-          body #wrapper nav #menu li a:hover {
-            color: red;
-            text-shadow: 2px 2px 1px white; }
+            body #wrapper nav #menu li a:hover {
+              color: red;
+              text-shadow: 2px 2px 1px white; }
+          body #wrapper nav #menu li .active {
+            background: none repeat scroll 0 0 white;
+            box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+            margin: 0;
+            padding: 3px 5px;
+            border-radius: 5px; }
     body #wrapper main {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -433,12 +439,5 @@ body {
     .contact #application .applicationButton:hover {
       background: #d68c18;
       transition: .6s; }
-
-a.active {
-  background: none repeat scroll 0 0 white;
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
-  margin: 0;
-  padding: 3px 5px;
-  border-radius: 5px; }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,7 +1,7 @@
 @import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
 
-$logo_URL: url('/../images/dose-media-bU6JyhSI6zo-unsplash.jpg');
+$logo_URL: url('/images/dose-media-bU6JyhSI6zo-unsplash.jpg');
 $color_panel: rgba(8, 216, 199, 0.308);
 
 body {
@@ -52,7 +52,6 @@ body {
         nav {
             grid-area: nav;
 
-
             #menu {
                 display: flex;
                 justify-content: space-evenly;
@@ -71,168 +70,168 @@ body {
                         font-size: 20px;
                         text-shadow: 1px 1px 1px white;
 
-                        .active {
-                            background: none repeat scroll 0 0 white;
-                            box-shadow: 2px 4px 2px rgba(0, 0, 0, .3);
-                            margin: 0;
-                            padding: 3px 5px;
-                            border-radius: 5px;
-                        }
-
-                        a:hover {
+                        &:hover {
                             color: red;
                             text-shadow: 2px 2px 1px white;
                         }
+                    }
 
+                    .active {
+                        background: none repeat scroll 0 0 white;
+                        box-shadow: 2px 4px 2px rgba(0, 0, 0, .3);
+                        margin: 0;
+                        padding: 3px 5px;
+                        border-radius: 5px;
                     }
                 }
             }
+        }
 
-            main {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-area: main;
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-area: main;
 
-                section {
-                    margin: 5px;
-                    background: $color_panel;
-                    border-radius: 10px;
-
-                    article {
-                        display: flex;
-                        flex-direction: column;
-
-                        #article_image {
-                            text-align: center;
-                            padding-top: 10px;
-
-                            img {
-                                border-radius: 10px;
-                                width: 350px;
-
-                            }
-                        }
-
-                        h2 {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-            aside {
-                grid-area: aside;
-            }
-
-            footer {
-                grid-area: footer;
+            section {
+                margin: 5px;
                 background: $color_panel;
-                border-radius: 15px;
-                margin-bottom: 10px;
+                border-radius: 10px;
 
-                p {
-                    margin: 0;
-                    padding: 10px;
-                    color: rgb(189, 3, 3);
+                article {
+                    display: flex;
+                    flex-direction: column;
+
+                    #article_image {
+                        text-align: center;
+                        padding-top: 10px;
+
+                        img {
+                            border-radius: 10px;
+                            width: 350px;
+
+                        }
+                    }
+
+                    h2 {
+                        text-align: center;
+                    }
                 }
             }
         }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            background: $color_panel;
+            border-radius: 15px;
+            margin-bottom: 10px;
+
+            p {
+                margin: 0;
+                padding: 10px;
+                color: rgb(189, 3, 3);
+            }
+        }
+    }
+}
+
+.contact {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    background: $color_panel;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 20px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    text-align: center;
+
+    h3 {
+        font-size: 40px;
+        color: #fff;
+        margin: 0;
     }
 
-    .contact {
-        width: auto;
-        height: auto;
+    p {
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+    }
+
+    #application {
+        width: 475px;
         margin: 0 auto;
-        padding: 30px;
-        background: $color_panel;
-        font-family: 'PT Sans', sans-serif;
-        border-radius: 20px;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-        text-align: center;
 
-        h3 {
-            font-size: 40px;
+        #applicationName,
+        #applicationEmail,
+        #applicationTelephone {
+            width: 100%;
+            height: 40px;
+            background: none;
+            margin-top: 25px;
+            border: 1px solid #fff;
+            border-radius: 40px;
+            text-align: center;
             color: #fff;
-            margin: 0;
+            font-size: 24px;
         }
 
-        p {
-            font-size: 18px;
-            color: #fff;
-            margin: 0;
+        #applicationName:focus,
+        #applicationEmail:focus,
+        #applicationTelephone:focus {
+            border: 1px solid #30ad64;
         }
 
-        #application {
-            width: 475px;
-            margin: 0 auto;
+        ::-webkit-input-placeholder {
+            color: #efefef;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        }
 
-            #applicationName,
-            #applicationEmail,
-            #applicationTelephone {
-                width: 100%;
-                height: 40px;
-                background: none;
-                margin-top: 25px;
-                border: 1px solid #fff;
-                border-radius: 40px;
-                text-align: center;
-                color: #fff;
-                font-size: 24px;
-            }
+        ::-moz-placeholder {
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        }
 
-            #applicationName:focus,
-            #applicationEmail:focus,
-            #applicationTelephone:focus {
-                border: 1px solid #30ad64;
-            }
+        :-moz-placeholder {
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        }
 
-            ::-webkit-input-placeholder {
-                color: #efefef;
-                font-family: 'PT Sans', sans-serif;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-            }
+        :-ms-input-placeholder {
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        }
 
-            ::-moz-placeholder {
-                color: #fff;
-                font-family: 'PT Sans', sans-serif;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-            }
+        ::placeholder {
+            color: #fff;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        }
 
-            :-moz-placeholder {
-                color: #fff;
-                font-family: 'PT Sans', sans-serif;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-            }
+        .applicationButton {
+            margin-top: 25px;
+            background: #30ad64;
+            border: none;
+            width: 100%;
+            height: 73px;
+            border-radius: 40px;
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-family: 'PT Sans', sans-serif;
+            cursor: pointer;
+            transition: .6s;
+        }
 
-            :-ms-input-placeholder {
-                color: #fff;
-                font-family: 'PT Sans', sans-serif;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-            }
-
-            ::placeholder {
-                color: #fff;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-            }
-
-            .applicationButton {
-                margin-top: 25px;
-                background: #30ad64;
-                border: none;
-                width: 100%;
-                height: 73px;
-                border-radius: 40px;
-                color: #fff;
-                font-size: 24px;
-                text-transform: uppercase;
-                font-family: 'PT Sans', sans-serif;
-                cursor: pointer;
-                transition: .6s;
-            }
-
-            .applicationButton:hover {
-                background: #d68c18;
-                transition: .6s;
-            }
+        .applicationButton:hover {
+            background: #d68c18;
+            transition: .6s;
         }
     }
+}
