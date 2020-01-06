@@ -8,15 +8,21 @@ $( document ).ready(function() {
     $( '#link_main_one' ).click(function() {
         $('section').detach();
         $( 'main' ).append(section_one);
+        $('li a').removeClass('active');
+        $(this).addClass('active');
     });
 
     $( '#link_main_two' ).click(function() {
         $('section').detach();
         $( 'main' ).append(section_two);
+        $('li a').removeClass('active');
+        $(this).addClass('active');
     });
 
     $( '#link_main_three' ).click(function() {
         $('section').detach();
         $( 'main' ).append(section_three);
+        $('li a').removeClass('active');
+        $(this).addClass('active');
     });
 });
