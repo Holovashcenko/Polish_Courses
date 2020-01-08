@@ -355,8 +355,82 @@ body {
               width: 350px; }
           body #wrapper main section article h2 {
             text-align: center; }
+      body #wrapper main .contact {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px;
+        background: rgba(8, 216, 199, 0.308);
+        font-family: 'PT Sans', sans-serif;
+        border-radius: 20px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        text-align: center; }
+        body #wrapper main .contact h3 {
+          font-size: 40px;
+          color: #fff;
+          margin: 0; }
+        body #wrapper main .contact p {
+          font-size: 18px;
+          color: #fff;
+          margin: 0; }
+        body #wrapper main .contact #application {
+          width: 475px;
+          margin: 0 auto; }
+          body #wrapper main .contact #application #applicationName,
+          body #wrapper main .contact #application #applicationEmail,
+          body #wrapper main .contact #application #applicationTelephone {
+            width: 100%;
+            height: 40px;
+            background: none;
+            margin-top: 25px;
+            border: 1px solid #fff;
+            border-radius: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px; }
+          body #wrapper main .contact #application #applicationName:focus,
+          body #wrapper main .contact #application #applicationEmail:focus,
+          body #wrapper main .contact #application #applicationTelephone:focus {
+            border: 1px solid #30ad64; }
+          body #wrapper main .contact #application ::-webkit-input-placeholder {
+            color: #efefef;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+          body #wrapper main .contact #application ::-moz-placeholder {
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+          body #wrapper main .contact #application :-moz-placeholder {
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+          body #wrapper main .contact #application :-ms-input-placeholder {
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+          body #wrapper main .contact #application ::placeholder {
+            color: #fff;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+          body #wrapper main .contact #application .applicationButton {
+            margin-top: 25px;
+            background: #30ad64;
+            border: none;
+            width: 100%;
+            height: 73px;
+            border-radius: 40px;
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-family: 'PT Sans', sans-serif;
+            cursor: pointer;
+            transition: .6s; }
+          body #wrapper main .contact #application .applicationButton:hover {
+            background: #d68c18;
+            transition: .6s; }
     body #wrapper aside {
-      grid-area: aside; }
+      grid-area: aside;
+      border-radius: 15px;
+      background: rgba(8, 216, 199, 0.308); }
     body #wrapper footer {
       grid-area: footer;
       background: rgba(8, 216, 199, 0.308);
@@ -366,78 +440,5 @@ body {
         margin: 0;
         padding: 10px;
         color: #bd0303; }
-
-.contact {
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  padding: 30px;
-  background: rgba(8, 216, 199, 0.308);
-  font-family: 'PT Sans', sans-serif;
-  border-radius: 20px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  text-align: center; }
-  .contact h3 {
-    font-size: 40px;
-    color: #fff;
-    margin: 0; }
-  .contact p {
-    font-size: 18px;
-    color: #fff;
-    margin: 0; }
-  .contact #application {
-    width: 475px;
-    margin: 0 auto; }
-    .contact #application #applicationName,
-    .contact #application #applicationEmail,
-    .contact #application #applicationTelephone {
-      width: 100%;
-      height: 40px;
-      background: none;
-      margin-top: 25px;
-      border: 1px solid #fff;
-      border-radius: 40px;
-      text-align: center;
-      color: #fff;
-      font-size: 24px; }
-    .contact #application #applicationName:focus,
-    .contact #application #applicationEmail:focus,
-    .contact #application #applicationTelephone:focus {
-      border: 1px solid #30ad64; }
-    .contact #application ::-webkit-input-placeholder {
-      color: #efefef;
-      font-family: 'PT Sans', sans-serif;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-    .contact #application ::-moz-placeholder {
-      color: #fff;
-      font-family: 'PT Sans', sans-serif;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-    .contact #application :-moz-placeholder {
-      color: #fff;
-      font-family: 'PT Sans', sans-serif;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-    .contact #application :-ms-input-placeholder {
-      color: #fff;
-      font-family: 'PT Sans', sans-serif;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-    .contact #application ::placeholder {
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-    .contact #application .applicationButton {
-      margin-top: 25px;
-      background: #30ad64;
-      border: none;
-      width: 100%;
-      height: 73px;
-      border-radius: 40px;
-      color: #fff;
-      font-size: 24px;
-      text-transform: uppercase;
-      font-family: 'PT Sans', sans-serif;
-      cursor: pointer;
-      transition: .6s; }
-    .contact #application .applicationButton:hover {
-      background: #d68c18;
-      transition: .6s; }
 
 /*# sourceMappingURL=all.css.map */

@@ -35,7 +35,17 @@ $( document ).ready(function() {
                             </div>
                         </article>
                       </section>`;
-    let section_three = '<section class="contact"><h3>Внимание</h3><p>Оставьте ваши контактные данные <br/>и наш консультант свяжется с вами</p><form id="application" action="application.php" method="POST" name="application "><input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required /><input name="email" type="email" id="applicationEmail" maxlength="30" placeholder="Введите ваш E-mail" required/><input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required /><button class="applicationButton" type="submit" form="application"> Оставить заявку </button></form></section>';
+                      
+    let section_three = `<section class="contact">
+                            <h3>Внимание</h3>
+                            <p>Оставьте ваши контактные данные <br/>и наш консультант свяжется с вами</p>
+                            <form id="application" action="application.php" method="POST" name="application ">
+                                <input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+                                <input name="email" type="email" id="applicationEmail" maxlength="30" placeholder="Введите ваш E-mail" required/>
+                                <input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
+                                <button class="applicationButton" type="submit" form="application"> Оставить заявку </button>
+                            </form>
+                        </section>`;
     
     $( '#link_main_one' ).click(function() {
         $('section').detach();
