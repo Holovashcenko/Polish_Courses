@@ -30,6 +30,8 @@
   },
   "dependencies": {
     "gulp-sourcemaps": "^2.6.5",
-    "minimist": ">=1.2.3"
+    "minimist": ">=1.2.3",
+    "acorn": ">=5.7.4",
+    "kind-of": ">=6.0.3"
   }
 }
